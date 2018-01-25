@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FindAFilm</string>
+    <string name="authority">com.packagename.authority</string>
+    <string name="account_type">some.account.type.com</string>
 </resources>

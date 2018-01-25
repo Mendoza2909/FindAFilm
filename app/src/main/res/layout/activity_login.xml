@@ -20,6 +20,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="63dp"
+
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName" />
@@ -58,4 +59,6 @@
         android:text="Register here"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray" />
+
+
 </RelativeLayout>
