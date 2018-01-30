@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "196398839692",
+    "firebase_url": "https://findafilm-7fa53.firebaseio.com",
+    "project_id": "findafilm-7fa53",
+    "storage_bucket": "findafilm-7fa53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196398839692:android:1f46ebd62f46f391",
+        "android_client_info": {
+          "package_name": "com.example.colin.findafilm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196398839692-sh3h0vahhlt4ksjej7c69a40huulvs5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colin.findafilm",
+            "certificate_hash": "5a472e72ac13bb0d24e893b1c912d550aba83193"
+          }
+        },
+        {
+          "client_id": "196398839692-a7pmn2rkd5kcivgfr8i207c4k4h7oim1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7TFvjrWjQmATvNkuRqtRyRyUe-xQufDo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196398839692-a7pmn2rkd5kcivgfr8i207c4k4h7oim1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
