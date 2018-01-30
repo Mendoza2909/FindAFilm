@@ -142,6 +142,7 @@ public class EmailPasswordActivity extends BaseActivity implements
                         // [START_EXCLUDE]
                         if (!task.isSuccessful()) {
                             mStatusTextView.setText(R.string.auth_failed);
+                            
                         }
                         hideProgressDialog();
                         // [END_EXCLUDE]
