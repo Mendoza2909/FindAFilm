@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.example.colin.findafilm.R;
+
 public class UserAreaActivity extends AppCompatActivity {
 
 

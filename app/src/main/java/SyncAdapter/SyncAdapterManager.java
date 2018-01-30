@@ -19,14 +19,14 @@ public class SyncAdapterManager {
 
 
     private static final String TAG = SyncAdapterManager.class.getSimpleName();
-    private final String authority;
-    private final String type;
+    //private final String authority;
+    //private final String type;
 
     private Account account;
     private Context context;
 
     SyncAdapterManager(final Context context) {
-        this.context = context;
+     /*   this.context = context;
 
         type = context.getString(R.string.account_type);
         authority = context.getString(R.string.authority);
@@ -65,6 +65,6 @@ public class SyncAdapterManager {
         if (ContentResolver.getIsSyncable(account, authority) == 0) {
             ContentResolver.setIsSyncable(account, authority, 1);
         }
-    }
+ */   }
 
 }
