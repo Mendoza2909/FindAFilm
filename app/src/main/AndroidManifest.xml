@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.colin.findafilm">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -16,7 +15,6 @@
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,15 +24,20 @@
         <activity android:name=".EmailPasswordActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".BaseActivity" />
-        <activity android:name=".UserAreaActivity">
-
-        </activity>
-
-
+        <activity android:name=".UserAreaActivity" />
+        <activity
+            android:name=".SelectGenreActivity"
+            android:label="@string/title_activity_select_genre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RateMovieActivity"
+            android:label="@string/title_activity_select_movie"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

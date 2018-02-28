@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -59,6 +60,9 @@ public class EmailPasswordActivity extends BaseActivity implements
         findViewById(R.id.email_create_account_button).setOnClickListener(this);
         findViewById(R.id.sign_out_button).setOnClickListener(this);
         findViewById(R.id.verify_email_button).setOnClickListener(this);
+        findViewById(R.id.continue_button).setOnClickListener(this);
+
+
 
         // [START initialize_auth]
         mAuth = FirebaseAuth.getInstance();
@@ -72,6 +76,11 @@ public class EmailPasswordActivity extends BaseActivity implements
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);
+        Button btn = (Button)findViewById(R.id.continue_button);
+        btn.setVisibility(View.VISIBLE);
+
+
+
     }
     // [END on_start_check_user]
 
@@ -142,7 +151,7 @@ public class EmailPasswordActivity extends BaseActivity implements
                         // [START_EXCLUDE]
                         if (!task.isSuccessful()) {
                             mStatusTextView.setText(R.string.auth_failed);
-                            
+
                         }
                         hideProgressDialog();
                         // [END_EXCLUDE]
@@ -242,6 +251,11 @@ public class EmailPasswordActivity extends BaseActivity implements
             signOut();
         } else if (i == R.id.verify_email_button) {
             sendEmailVerification();
+        } else if (i == R.id.continue_button) {
+            Intent selectGenreIntent = new Intent(EmailPasswordActivity.this, SelectGenreActivity.class);
+            //userAreaIntent.putExtra("username", usernameStr);
+            selectGenreIntent.putExtra("username", "Hello");
+            startActivity(selectGenreIntent);
         }
     }
 }

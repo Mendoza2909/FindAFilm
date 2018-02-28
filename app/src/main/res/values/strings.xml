@@ -75,4 +75,87 @@
 
     <string name="id_fmt">User ID: %s</string>
     <string name="email_fmt">Email: %s</string>
+
+    <string name="title_activity_select_genre">SelectGenreActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string-array name="genreNames">
+        <item name="genre1">Action</item>
+        <item name="genre2">Romantic Comedy</item>
+        <item name="genre3">Period Drama</item>
+        <item name="genre4">Horror</item>
+        <item name="genre5">Comedy</item>
+        <item name="genre6">Science Fiction</item>
+        <item name="genre7">Animation</item>
+        <item name="genre8">Classic</item>
+        <item name="genre9">Western</item>
+        <item name="genre10">Adventure</item>
+    </string-array>
+    <string name="title_activity_select_movie">SelectMovieActivity</string>
+
+
+    <string-array name="ActionMovies">
+        <item name="movie1">Terminator</item>
+        <item name="movie2">The Matrix</item>
+        <item name="movie3">Casino Royale</item>
+    </string-array>
+
+    <string-array name="ComedyMovies">
+        <item name="movie1">Airplane</item>
+        <item name="movie2">Happy Gilmore</item>
+        <item name="movie3">Anchorman</item>
+    </string-array>
+
+    <string-array name="RomanticComedyMovies">
+        <item name="movie1">Love Actually</item>
+        <item name="movie2">When Harry Met Sally</item>
+        <item name="movie3">Notting Hill</item>
+    </string-array>
+
+    <string-array name="PeriodDramaMovies">
+        <item name="movie1">Pride and Prejudice</item>
+        <item name="movie2">The Duchess</item>
+        <item name="movie3">Atonement</item>
+    </string-array>
+
+
+    <string-array name="HorrorMovies">
+        <item name="movie1">Saw</item>
+        <item name="movie2">The Hills Have Eyes</item>
+        <item name="movie3">Get Out</item>
+    </string-array>
+
+    <string-array name="ClassicMovies">
+        <item name="movie1">Casablanca</item>
+        <item name="movie2">Gone With The Wind</item>
+        <item name="movie3">Nosferatu</item>
+    </string-array>
+
+    <string-array name="WesternMovies">
+        <item name="movie1">High Noon</item>
+        <item name="movie2">Butch Cassidy and the Sundance Kid</item>
+        <item name="movie3">Dances with Wolves</item>
+    </string-array>
+
+    <string-array name="AdventureMovies">
+        <item name="movie1">Indiana Jones</item>
+        <item name="movie2">Tomb Raider</item>
+        <item name="movie3">Thor: Ragnarok</item>
+    </string-array>
+
+    <string-array name="ScienceFictionMovies">
+        <item name="movie1">Twelve Monkeys</item>
+        <item name="movie2">Looper</item>
+        <item name="movie3">Blade Runner</item>
+    </string-array>
+
+    <string-array name="AnimationMovies">
+        <item name="movie1">The Incredibles</item>
+        <item name="movie2">Toy Story</item>
+        <item name="movie3">My Neighbour Totoro</item>
+    </string-array>
+
+
 </resources>

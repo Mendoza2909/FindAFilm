@@ -4,24 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.colin.findafilm.Old.UserAreaActivity">
+    tools:context="com.example.colin.findafilm.UserAreaActivity">
 
     <EditText
         android:id="@+id/fsWelcomeMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="202dp"
+        android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Welcome"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="83dp" />
+        app:layout_constraintBottom_toTopOf="@+id/rtBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <RatingBar
         android:id="@+id/rtBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="227dp" />
+        android:layout_height="0dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fsWelcomeMsg" />
 </android.support.constraint.ConstraintLayout>

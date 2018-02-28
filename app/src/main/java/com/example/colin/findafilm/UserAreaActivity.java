@@ -1,23 +1,27 @@
 package com.example.colin.findafilm;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
-
-import com.example.colin.findafilm.R;
+import android.widget.Toast;
+import com.google.firebase.database.*;
+import android.graphics.Color;
 
 public class UserAreaActivity extends AppCompatActivity {
 
+FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
+DatabaseReference mDataRef = mDatabase.getReference();
 
 
-    //private String username = "";
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
@@ -30,13 +34,18 @@ public class UserAreaActivity extends AppCompatActivity {
         rtBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-
+                Log.d("Change", "Rating Changed");
+                mDataRef.child("Rating").setValue(ratingBar.getRating());
             }
         });
 
-
-
     }
+
+
+
+
+
+
 
 
     private boolean isNetworkConnected() {
